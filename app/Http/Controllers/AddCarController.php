@@ -1,11 +1,9 @@
 <?php
 
-// app/Http/Controllers/PeminjamanMobilController.php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Car; // Pastikan model Mobil sudah ada
+use App\Models\Car; 
 
 class AddCarController extends Controller
 {
@@ -16,7 +14,6 @@ class AddCarController extends Controller
 
     public function addcaraction(Request $request)
     {
-        // Validasi input sesuai kebutuhan (optional)
         $request->validate([
             'merek' => 'required',
             'model' => 'required',
@@ -24,7 +21,6 @@ class AddCarController extends Controller
             'tarif_sewa' => 'required|numeric',
         ]);
 
-        // Simpan mobil ke dalam database
         if (Car::create([
             'merek' => $request->merek,
             'model' => $request->model,

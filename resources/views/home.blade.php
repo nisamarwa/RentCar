@@ -1,5 +1,3 @@
-<!-- home.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,44 +45,6 @@
             <button type='button' onclick="window.location='{{ route('rental') }}'">PEMINJAMAN MOBIL</button>
             <button>PENGEMBALIAN MOBIL</button>
         </div>
-        <div>
-        <h2>Daftar Mobil</h2>
-          <table class="table">
-              <thead>
-                  <tr>
-                      <th>Merek</th>
-                      <th>Model</th>
-                      <th>Nomor Plat</th>
-                      <th>Tarif Sewa</th>
-                  </tr>
-              </thead>
-              <tbody>
-              @if(isset($allCars))
-                  @foreach ($allCars as $car)
-                      <tr>
-                          <td>{{ $car->merek }}</td>
-                          <td>{{ $car->model }}</td>
-                          <td>{{ $car->nomor_plat }}</td>
-                          <td>{{ $car->tarif_sewa }}</td>
-                      </tr>
-                  @endforeach
-                  @else
-                  <!-- $allCars is not set -->
-                  <p>$allCars is not set.</p>
-              @endif
-              </tbody>
-          </table>
-        </div>
-        <!-- <h2>Daftar Mobil</h2> -->
-        <div>
-        <!-- @if(isset($allCars) && $allCars->count() > 0) -->
-        <!-- @else
-          <br/>
-          <br/>
-          <p>Tidak ada mobil yang tersedia.</p>
-        @endif -->
-        </div>
-
         </div>        
     </div>
 </body>

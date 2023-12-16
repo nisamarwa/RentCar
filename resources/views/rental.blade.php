@@ -1,4 +1,3 @@
-<!-- resources/views/rental/create.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +7,13 @@
     <title>Rental Form</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <!-- Add any additional styles you need -->
     <style>
-        /* Add your custom styles here */
         body {
-            padding-top: 70px; /* Adjust based on your navigation bar height */
+            padding-top: 70px;
         }
 
         .container {
-            max-width: 800px; /* Adjust based on your content width preference */
+            max-width: 800px;
         }
     </style>
 </head>

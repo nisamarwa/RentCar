@@ -11,7 +11,7 @@ class Car extends Model
     protected $table = 'rentals';
     protected $primaryKey = 'id';
 
-    protected $fillable = ['car_id', 'start_date', 'end_date', 'customer_name', 'customer_email', 'status', 'user_id'];
+    protected $fillable = ['car_id', 'start_date', 'end_date', 'customer_name', 'customer_email', 'status'];
 
     public function car()
     {
